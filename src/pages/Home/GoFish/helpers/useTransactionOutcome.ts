@@ -6,7 +6,7 @@ export const useTransactionOutcome = () => {
   const [txData] = useState({
     status: searchParams.get('status'),
     txHash: searchParams.get('txHash'),
-    address: searchParams.get('address')
+    address: searchParams.get('address'),
   });
 
   useEffect(() => {

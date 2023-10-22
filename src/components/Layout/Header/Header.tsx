@@ -4,7 +4,6 @@ import { environment } from 'config';
 import { logout } from 'helpers';
 import { useGetIsLoggedIn } from 'hooks';
 import { RouteNamesEnum } from 'localConstants';
-import MultiversXLogo from '../../../assets/img/multiversx-logo.svg?react';
 
 export const Header = () => {
   const isLoggedIn = useGetIsLoggedIn();
@@ -20,7 +19,10 @@ export const Header = () => {
         className='flex items-center justify-between'
         to={isLoggedIn ? RouteNamesEnum.dashboard : RouteNamesEnum.home}
       >
-        <MultiversXLogo className='w-full h-6' />
+        <div className='flex items-center justify-center text-[20px] font-bold'>
+          <img src='/pularmoney.png' className='w-16 h-16' />
+          <span >Pular Money</span>
+        </div>
       </MxLink>
 
       <nav className='h-full w-full text-sm sm:relative sm:left-auto sm:top-auto sm:flex sm:w-auto sm:flex-row sm:justify-end sm:bg-transparent'>

@@ -8,11 +8,11 @@ export const getTransactionUrl = (walletAddress: string) => {
   const walletBaseUrl = `${walletAddress}/${WALLET_PROVIDER_SEND_TRANSACTION_URL}`;
 
   const receiver =
-    'erd1deaddeaddeaddeaddeaddeaddeaddeaddeaddeaddeaddeaddeaqtv0gag'; // add your receiver address here
-  const data = 'Hello_world';
-  const value = TokenTransfer.egldFromAmount('0.01').toString();
+    'erd1qqqqqqqqqqqqqpgqmrdfdd8c2kzl477hvzlamnszkgyf5ux9crwqct5kaj'; // add your receiver address here
+  const data = 'getNfts';
+  const value = TokenTransfer.egldFromAmount('0.05').toString();
   const callbackUrl = encodeURIComponent(window.location.origin);
-  const gasLimit = '116500'; // Minimum gasLimit for guarded wallets
+  const gasLimit = '10000000'; // Minimum gasLimit for guarded wallets
 
   const searchParams = {
     receiver,
